@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) {
+# Precio normal de la entrada
+precio = 7
+
+# Leer la edad de la persona
+edad = int(input("Ingrese su edad: "))
+
+# Aplicar descuentos según la edad
+if edad < 5:
+    total = precio - (precio * 0.60)
+
+elif edad > 60:
+    total = precio - (precio * 0.55)
+
+else:
+    total = precio
+
+# Mostrar resultado
+print("El precio de la entrada es:", total, "soles")
+	}
+}
